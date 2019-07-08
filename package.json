@@ -1,0 +1,52 @@
+{
+  "name": "assignment5",
+  "version": "1.0.0",
+  "description": "Assignment 5",
+  "main": "/src/server/index.js",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.0",
+    "body-parser": "^1.18.3",
+    "core-js": "^3.0.0",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "joi": "^14.0.1",
+    "md5": "^2.2.1",
+    "mongoose": "^5.3.5",
+    "morgan": "^1.9.1",
+    "prop-types": "^15.6.2",
+    "pug": "^2.0.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "serve-favicon": "^2.5.0",
+    "simple-env-config": "^1.0.1",
+    "styled-components": "^4.0.2",
+    "underscore": "^1.9.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "node ./src/server/index.js",
+    "start-test": "cross-env NODE_ENV=test node ./src/server/index.js",
+    "start-travis": "cross-env NODE_ENV=travis node ./src/server/index.js",
+    "test": "cross-env NODE_ENV=test mocha --recursive",
+    "test-travis": "cross-env NODE_ENV=travis mocha --recursive"
+  },
+  "author": "G. Hemingway",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "prettier": "^1.16.4",
+    "puppeteer": "^1.14.0",
+    "should": "^13.2.3",
+    "superagent": "^5.0.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
